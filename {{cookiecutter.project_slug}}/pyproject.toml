@@ -1,7 +1,7 @@
 [project]
-name = "{{ cookiecutter.package_name.lower.replace(' ','_') }}"
+name = "{{ cookiecutter.project_slug }}"
 version = "{{ cookiecutter.project_version }}"
-description = {{ cookiecutter.description|tojson }}
+description = "{{ cookiecutter.description }}"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
