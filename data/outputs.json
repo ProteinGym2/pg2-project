@@ -1,0 +1,1 @@
+{"actual": [1.0, 1.0, 1.0, 1.0, 1.0], "predicted": [0.5892055487898171, 0.22399338246248945, 0.3083458546341341, 0.3340875821558299, 0.18768526144595965], "model": {"name": "random heuristic", "params": {"seed": 0}}, "metadata": {"dataset": "data/sample.csv"}}

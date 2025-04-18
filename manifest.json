@@ -1,0 +1,5 @@
+{
+    "package_name": "{{ cookiecutter.package_name }}",
+    "package_description": "{{cookiecutter.description}}",
+    "data_sources": "{{ cookiecutter.data_sources|tojson"
+}

@@ -1,0 +1,10 @@
+{
+    "project_name": "PG2 Project",
+    "open_source_license": ["MIT", "BSD", "ISCL", "Apache Software License 2.0", "Not open source"],
+    "project_version": "0.1.0",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "description": "Project to be submitted to ProteinGym2",
+    "author": "Author name",
+    "python_version": "3.10",
+    "data_sources": "# comma-separated urls to download datasets and place them in /data folder"
+}
