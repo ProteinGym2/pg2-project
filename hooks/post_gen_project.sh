@@ -3,9 +3,9 @@
 printf "current dir is"
 pwd
 
-if [ "{{ cookiecutter.data_sources }}" != "#*" ]; then
+if [ "{{ cookiecutter.data_sources }}" != "#"* ]; then
 	for url in {{ cookiecutter.data_sources }}; do
-		if [ $url = "http"* ]; then
+		if [ "$url" = "http"* ]; then
 			echo "download contents of $url"
 		else
 			VERSION="v1.2"
