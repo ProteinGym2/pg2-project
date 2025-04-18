@@ -1,4 +1,4 @@
-from the_project.method import predict
+from {{ cookiecutter.project_slug }}.method import predict
 
 if __name__ == "__main__":
     print("Generating outputs")
