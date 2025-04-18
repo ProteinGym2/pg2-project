@@ -2,7 +2,7 @@ import pandas as pd
 from random import random
 import json
 
-if __name__ == '__main__':
+def predict():
     dataset = "data/sample.csv"
     data = pd.read_csv(dataset)
     target = "attr1"
