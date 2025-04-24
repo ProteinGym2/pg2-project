@@ -8,4 +8,7 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 RUN uv sync
 
-ENTRYPOINT ["uv", "run", "python", "run.py"]
+ARG INPUT_FILE
+ARG OUTPUT_FILE
+
+ENTRYPOINT sh -c 'uv run run.py predict --input-file "$INPUT_FILE" --output-file "$OUTPUT_FILE"'
