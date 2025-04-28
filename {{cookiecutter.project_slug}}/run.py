@@ -1,17 +1,18 @@
+#!/usr/local/bin/python
+
 import pandas as pd
 from random import random
 import json
 from loguru import logger
-import click
+import typer
 
-@click.group()
-def cli():
-    pass
+app = typer.Typer()
 
-@cli.command(name="predict", help="predict the targets from the input dataframes")
-@click.option("--input-file", help="the input CSV dataframe")
-@click.option("--output-file", help="the output JSON predicted targets")
-def predict(input_file: str, output_file: str):
+@app.command()
+def predict(
+    input_file: str = "data/sample.csv",
+    output_file: str = "data/output.json"
+):
 
     logger.info(f"Reading from {input_file}")
     logger.info(f"Generating outputs")
@@ -38,5 +39,11 @@ def predict(input_file: str, output_file: str):
 
     logger.info(f"Done. Check {output_file}")
 
+
+@app.command()
+def test():
+    pass
+
+
 if __name__ == "__main__":
-    cli()
+    app()

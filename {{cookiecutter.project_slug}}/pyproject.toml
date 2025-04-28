@@ -5,7 +5,7 @@ description = "{{ cookiecutter.description }}"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "click>=8.1.8",
+    "typer>=0.15.2",
     "loguru>=0.7.3",
     "pandas>=2.2.3",
 ]
