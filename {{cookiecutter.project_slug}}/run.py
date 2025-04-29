@@ -32,7 +32,7 @@ def predict(
     }
 
     output_df = pd.DataFrame(output)
-    output_df.to_csv(output_file)
+    output_df.to_csv(output_file, index=False)
 
     logger.info(f"Done. Check {output_file}")
 
