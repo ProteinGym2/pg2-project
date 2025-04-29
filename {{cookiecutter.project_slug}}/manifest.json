@@ -1,5 +1,23 @@
 {
     "package_name": "{{ cookiecutter.project_slug }}",
     "package_description": "{{ cookiecutter.description }}",
-    "data_sources": "{{ cookiecutter.data_sources }}"
+    "input": {
+        "url":"data/sample.csv",
+        "sequence": "sequence",
+        "target": "attr2",
+        "split_by": "split"
+    },
+    "output": {
+        "url":"data/output.csv",
+        "sequence": "sequence",
+        "predicted": "pred",
+        "actual": "attr2",
+        "split_by": "split"
+    },
+    "model": {
+        "name": "random heuristic",
+	"params": {
+            "seed": 42
+	}
+    }
 }
